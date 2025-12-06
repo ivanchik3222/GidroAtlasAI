@@ -1,0 +1,19 @@
+version: '3.8'
+
+services:
+  api:
+    build: .
+    image: hidroatlasai-api:latest
+    ports:
+      - "5353:5353"
+    # Mount workspace for convenience in development; read-only prevents accidental container writes
+    volumes:
+      - ./:/app:ro
+    restart: unless-stopped
+    environment:
+      - PYTHONUNBUFFERED=1
+    healthcheck:
+      test: ["CMD-SHELL", "curl -f http://localhost:5353/meta || exit 1"]
+      interval: 30s
+      timeout: 5s
+      retries: 3

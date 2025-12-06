@@ -1,0 +1,20 @@
+{
+  "region": 1,
+  "resource_type": 0,
+  "water_type": 2,
+  "fauna": 0,
+  "passport_age": 12,
+  "is_old_passport": 0,
+  "technical_condition": 2,
+  "condition_inv": 1,
+  "water_level_upstream": 3.2,
+  "water_level_downstream": 2.9,
+  "level_diff": 0.3,
+  "exploitation_stress": 1,
+  "height": 5.0,
+  "width": 2.3,
+  "depth": 1.5,
+  "num_incidents_past": 0,
+  "latitude": 55.7558,
+  "longitude": 37.6176
+}
